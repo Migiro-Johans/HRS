@@ -1,0 +1,360 @@
+[
+  {
+    "model": "leave.leavetype",
+    "pk": "11111111-1111-1111-1111-111111111111",
+    "fields": {
+      "name": "Annual Leave",
+      "code": "AL",
+      "description": "Paid annual leave entitlement",
+      "days_per_year": "21.00",
+      "accrual_method": "annual",
+      "requires_approval": true,
+      "requires_documentation": false,
+      "max_consecutive_days": 14,
+      "min_notice_days": 7,
+      "can_carry_forward": true,
+      "max_carry_forward_days": "5.00",
+      "is_paid": true,
+      "applies_to_probation": false,
+      "gender_specific": "all",
+      "is_active": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.leavetype",
+    "pk": "22222222-2222-2222-2222-222222222222",
+    "fields": {
+      "name": "Sick Leave",
+      "code": "SL",
+      "description": "Paid sick leave with medical certificate",
+      "days_per_year": "14.00",
+      "accrual_method": "annual",
+      "requires_approval": true,
+      "requires_documentation": true,
+      "max_consecutive_days": null,
+      "min_notice_days": 0,
+      "can_carry_forward": false,
+      "max_carry_forward_days": "0.00",
+      "is_paid": true,
+      "applies_to_probation": true,
+      "gender_specific": "all",
+      "is_active": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.leavetype",
+    "pk": "33333333-3333-3333-3333-333333333333",
+    "fields": {
+      "name": "Maternity Leave",
+      "code": "MAT",
+      "description": "Maternity leave as per Kenyan law",
+      "days_per_year": "90.00",
+      "accrual_method": "none",
+      "requires_approval": true,
+      "requires_documentation": true,
+      "max_consecutive_days": 90,
+      "min_notice_days": 30,
+      "can_carry_forward": false,
+      "max_carry_forward_days": "0.00",
+      "is_paid": true,
+      "applies_to_probation": true,
+      "gender_specific": "female",
+      "is_active": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.leavetype",
+    "pk": "44444444-4444-4444-4444-444444444444",
+    "fields": {
+      "name": "Paternity Leave",
+      "code": "PAT",
+      "description": "Paternity leave as per Kenyan law",
+      "days_per_year": "14.00",
+      "accrual_method": "none",
+      "requires_approval": true,
+      "requires_documentation": true,
+      "max_consecutive_days": 14,
+      "min_notice_days": 7,
+      "can_carry_forward": false,
+      "max_carry_forward_days": "0.00",
+      "is_paid": true,
+      "applies_to_probation": true,
+      "gender_specific": "male",
+      "is_active": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.leavetype",
+    "pk": "55555555-5555-5555-5555-555555555555",
+    "fields": {
+      "name": "Compassionate Leave",
+      "code": "CL",
+      "description": "Leave for bereavement or family emergencies",
+      "days_per_year": "5.00",
+      "accrual_method": "none",
+      "requires_approval": true,
+      "requires_documentation": false,
+      "max_consecutive_days": 5,
+      "min_notice_days": 0,
+      "can_carry_forward": false,
+      "max_carry_forward_days": "0.00",
+      "is_paid": true,
+      "applies_to_probation": true,
+      "gender_specific": "all",
+      "is_active": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.leavetype",
+    "pk": "66666666-6666-6666-6666-666666666666",
+    "fields": {
+      "name": "Study Leave",
+      "code": "STL",
+      "description": "Leave for examinations and professional development",
+      "days_per_year": "10.00",
+      "accrual_method": "annual",
+      "requires_approval": true,
+      "requires_documentation": true,
+      "max_consecutive_days": 5,
+      "min_notice_days": 14,
+      "can_carry_forward": false,
+      "max_carry_forward_days": "0.00",
+      "is_paid": true,
+      "applies_to_probation": false,
+      "gender_specific": "all",
+      "is_active": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.leavetype",
+    "pk": "77777777-7777-7777-7777-777777777777",
+    "fields": {
+      "name": "Unpaid Leave",
+      "code": "UL",
+      "description": "Leave without pay",
+      "days_per_year": "30.00",
+      "accrual_method": "none",
+      "requires_approval": true,
+      "requires_documentation": false,
+      "max_consecutive_days": 30,
+      "min_notice_days": 14,
+      "can_carry_forward": false,
+      "max_carry_forward_days": "0.00",
+      "is_paid": false,
+      "applies_to_probation": false,
+      "gender_specific": "all",
+      "is_active": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "payroll.taxtable",
+    "pk": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "fields": {
+      "effective_from": "2024-01-01",
+      "effective_to": null,
+      "is_active": true,
+      "band_1_limit": "24000.00",
+      "band_1_rate": "0.1000",
+      "band_2_limit": "32333.00",
+      "band_2_rate": "0.2500",
+      "band_3_limit": "500000.00",
+      "band_3_rate": "0.3000",
+      "band_4_limit": "800000.00",
+      "band_4_rate": "0.3250",
+      "band_5_rate": "0.3500",
+      "personal_relief": "2400.00",
+      "insurance_relief_rate": "0.1500",
+      "insurance_relief_max": "5000.00",
+      "disability_exemption": "150000.00",
+      "nssf_tier1_limit": "7000.00",
+      "nssf_tier1_rate": "0.0600",
+      "nssf_tier2_limit": "36000.00",
+      "nssf_tier2_rate": "0.0600",
+      "sha_rate": "0.0275",
+      "housing_levy_rate": "0.0150",
+      "pension_max_deduction": "20000.00",
+      "mortgage_interest_max": "25000.00",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb01",
+    "fields": {
+      "name": "New Year's Day",
+      "date": "2025-01-01",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb02",
+    "fields": {
+      "name": "Good Friday",
+      "date": "2025-04-18",
+      "is_recurring": false,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb03",
+    "fields": {
+      "name": "Easter Monday",
+      "date": "2025-04-21",
+      "is_recurring": false,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb04",
+    "fields": {
+      "name": "Labour Day",
+      "date": "2025-05-01",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb05",
+    "fields": {
+      "name": "Madaraka Day",
+      "date": "2025-06-01",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb06",
+    "fields": {
+      "name": "Huduma Day",
+      "date": "2025-10-10",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb07",
+    "fields": {
+      "name": "Mashujaa Day",
+      "date": "2025-10-20",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb08",
+    "fields": {
+      "name": "Jamhuri Day",
+      "date": "2025-12-12",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb09",
+    "fields": {
+      "name": "Christmas Day",
+      "date": "2025-12-25",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "leave.publicholiday",
+    "pk": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb10",
+    "fields": {
+      "name": "Boxing Day",
+      "date": "2025-12-26",
+      "is_recurring": true,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "policies.policycategory",
+    "pk": "cccccccc-cccc-cccc-cccc-cccccccccc01",
+    "fields": {
+      "name": "Human Resources",
+      "description": "HR policies and procedures",
+      "order": 1,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "policies.policycategory",
+    "pk": "cccccccc-cccc-cccc-cccc-cccccccccc02",
+    "fields": {
+      "name": "Finance & Accounts",
+      "description": "Financial policies and procedures",
+      "order": 2,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "policies.policycategory",
+    "pk": "cccccccc-cccc-cccc-cccc-cccccccccc03",
+    "fields": {
+      "name": "IT & Security",
+      "description": "IT and information security policies",
+      "order": 3,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "policies.policycategory",
+    "pk": "cccccccc-cccc-cccc-cccc-cccccccccc04",
+    "fields": {
+      "name": "Operations",
+      "description": "Operational procedures and guidelines",
+      "order": 4,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "policies.policycategory",
+    "pk": "cccccccc-cccc-cccc-cccc-cccccccccc05",
+    "fields": {
+      "name": "Health & Safety",
+      "description": "Health, safety, and environment policies",
+      "order": 5,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  }
+]

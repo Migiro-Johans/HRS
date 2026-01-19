@@ -1,0 +1,270 @@
+PAYROLL AND LEAVE MANAGEMENT SYSTEM
+
+System Description and Technology Stack
+
+Organization: House of Procurement Limited
+Target Users: Employees, Heads of Department, Human Resource, Accounts, Management
+Current Staff Size: ~50 Employees
+Email Platform: Microsoft 365
+
+1. Purpose of the System
+
+The Payroll and Leave Management System is a centralized, secure, web-based platform designed to automate payroll processing, leave administration, and employee information access while ensuring statutory compliance, strong internal controls, and a consistent employee experience.
+
+In addition to payroll and leave, the system will serve as a single source of truth for company policies and departmental Standard Operating Procedures (SOPs), ensuring that all staff have controlled, up-to-date access to official organizational guidance.
+
+2. What the System Is Intended to Achieve
+2.1 Payroll Management Objectives
+
+The system shall:
+
+Accurately compute monthly payroll for all employees
+
+Apply all statutory deductions in line with Kenyan law, including:
+
+PAYE
+
+Social Health Authority (SHA)
+
+NSSF
+
+Affordable Housing Levy
+
+Support organization-specific deductions and benefits
+
+Enforce a role-based payroll approval workflow:
+
+Accounts prepares payroll
+
+Human Resource reviews and approves
+
+Final approval by Management / Group CEO (where applicable)
+
+Generate a bank-compatible payroll file for salary payments
+
+Produce secure, auditable payroll records
+
+2.2 Employee Self-Service Objectives
+
+The system shall empower employees to:
+
+Log in securely using official company email accounts
+
+Access and download:
+
+Monthly payslips
+
+Historical payslips
+
+Annual and on-demand G9 (P9A) tax forms
+
+View leave balances and leave history
+
+Apply for leave electronically and track approval status
+
+Access approved company and departmental policies and SOPs
+
+2.3 Payslips and G9 (P9A) Documentation
+
+The system shall:
+
+Automatically generate monthly payslips after payroll approval
+
+Automatically generate G9 (P9A) forms for every employee
+
+Ensure all payroll documents:
+
+Are stored securely
+
+Carry digital approval stamps and e-signatures
+
+Are traceable and audit-ready
+
+Allow HR and Management digital sign-off on payslips
+
+2.4 Leave Management Objectives
+
+The system shall:
+
+Automate leave application and approval workflows
+
+Enforce the following approval chain:
+
+Employee → Head of Department (Line Manager) → Human Resource
+
+Automatically update leave balances upon approval
+
+Support different leave types and policy rules
+
+Provide visibility of leave schedules for departmental planning
+
+2.5 Company Policies and SOP Management (New Module)
+
+The system shall include a Policies and SOPs module that serves as a centralized document repository with controlled access.
+
+The module shall:
+
+Allow Human Resource and authorized administrators to upload, update, and archive:
+
+Company-wide policies
+
+Department-specific SOPs
+
+Restrict access based on:
+
+Employee department
+
+Role or designation
+
+Present policies and SOPs directly on each user’s dashboard, ensuring:
+
+Employees see only documents relevant to them
+
+Departmental SOPs are clearly separated from company-wide policies
+
+Maintain version control, including:
+
+Document version numbers
+
+Effective dates
+
+Archived previous versions
+
+Log user activity, including:
+
+Document views
+
+Downloads
+
+Acknowledgements (where required)
+
+This ensures consistent communication, compliance, and alignment with organizational standards.
+
+2.6 Governance, Compliance, and Audit
+
+The system shall:
+
+Enforce role-based access control across all modules
+
+Maintain tamper-proof audit logs of:
+
+Payroll preparation and approvals
+
+Leave applications and approvals
+
+Payslip and G9 generation and access
+
+Policy and SOP uploads, updates, and access
+
+Improve accountability, traceability, and regulatory compliance
+
+3. Non-Functional Goals
+
+The system must be:
+
+Easy to use – simple dashboards and intuitive navigation
+
+Secure – protection of payroll, personal, and policy data
+
+Scalable – able to grow beyond 50 employees without redesign
+
+Reliable – high availability and data integrity
+
+Maintainable – easy updates to payroll rules, leave policies, and documents
+
+4. Required Technology Stack
+4.1 Frontend (User Interface)
+
+React with TypeScript
+
+Role-based dashboards for employees, HODs, HR, Accounts, and Management
+
+Dedicated section for policies and departmental SOPs
+
+4.2 Backend (Business Logic and APIs)
+
+Python Django + Django REST Framework
+
+Payroll computation and approval workflows
+
+Leave management logic
+
+Policy/SOP access control and versioning
+
+Audit logging
+
+4.3 Database
+
+PostgreSQL (Managed)
+
+Payroll records
+
+Leave balances and history
+
+Policy metadata, versions, and access logs
+
+4.4 Authentication and Access Control
+
+Microsoft Entra ID (Azure Active Directory) – Single Sign-On
+
+Login via official Microsoft 365 email accounts
+
+Role- and department-based authorization
+
+4.5 Document Generation and Storage
+
+PDF Generation: WeasyPrint (or equivalent)
+
+File Storage: Azure Blob Storage
+
+Used for payslips, G9 forms, payroll exports, policies, and SOPs.
+
+4.6 Digital Signatures
+
+Digital approval stamps and e-signatures for:
+
+Payslips
+
+G9 forms
+
+Optional upgrade to cryptographic certificate signing
+
+4.7 Background Processing and Automation
+
+Celery + Redis
+
+Payroll runs
+
+Payslip and G9 generation
+
+Leave accrual updates
+
+Policy publication notifications
+
+4.8 Hosting and Infrastructure
+
+Microsoft Azure
+
+Azure App Service / Container Apps
+
+Azure Database for PostgreSQL
+
+Azure Blob Storage
+
+Azure Cache for Redis
+
+5. Expected Outcomes
+
+Improved payroll accuracy and compliance
+
+Transparent and efficient leave management
+
+Centralized access to company and departmental policies
+
+Reduced HR and finance administrative burden
+
+Strong governance, audit readiness, and employee alignment
+
+6. Conclusion
+
+The proposed Payroll and Leave Management System will function not only as a payroll and leave automation tool but also as a central employee information and governance platform, supporting compliance, transparency, and operational excellence as the organization grows.
